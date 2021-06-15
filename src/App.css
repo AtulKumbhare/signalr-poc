@@ -13,8 +13,35 @@
   }
 }
 
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(148, 148, 148, 0.38);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-thumb:horizontal {
+  background-color: rgb(150, 150, 150);
+  border-radius: 10px;
+}
+
 .App-header {
-  background-color: #282c34;
+  background: #c31432; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #240b36,
+    #c31432
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #240b36,
+    #c31432
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +62,165 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.MuiFormControl-root {
+  width: 100% !important;
+}
+
+.MuiOutlinedInput-input {
+  font-size: 18px !important;
+}
+
+.MuiButton-root {
+  padding: 10px 16px !important;
+  font-weight: bold !important;
+}
+
+.otp-field input {
+  padding: 14px;
+  border-radius: 4px;
+  border: 1px solid gray;
+  margin: 0 6px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.login-card {
+  background-color: #ffffff;
+  width: 40%;
+  height: 300px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 46px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.Toastify__toast-body {
+  font-size: 18px !important;
+}
+
+.user-details-container {
+  width: 100%;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.auction-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.auction-container .MuiTextField-root {
+  width: calc(100% - 260px) !important;
+}
+
+.auction-container input {
+  padding: 12px;
+  text-align: center;
+}
+
+.post {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0f2027;
+  background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  color: #fff;
+  border-radius: 6px;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 16px 0;
+  position: relative;
+}
+
+.post-content {
+  margin: 0;
+}
+
+.user-details-container .MuiBadge-anchorOriginTopRightRectangle {
+  right: 50px !important;
+  width: 105px;
+  padding: 12px 0 !important;
+  font-weight: 600 !important;
+}
+
+.post-container,
+.chat-container {
+  background-color: #fff;
+  width: 450px;
+  padding: 20px;
+  border-radius: 6px;
+  margin: 20px 0 20px 20px;
+  height: 500px;
+}
+
+.chat-container {
+  width: 780px;
+  margin-left: 0;
+  margin-right: 20px;
+}
+.chat-container .MuiTextField-root {
+  width: calc(100% - 90px) !important;
+  margin-right: 16px;
+}
+
+.chat-container .MuiOutlinedInput-input {
+  padding: 13px !important;
+}
+
+.message-container {
+  margin: 16px 0;
+  height: calc(100% - 48px);
+  overflow: auto;
+}
+
+.post .MuiBadge-root {
+  position: absolute;
+  right: 68px;
+  width: 123px;
+}
+
+.signalR-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.signalR-container .person-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.signalR-container .MuiFormControl-root {
+  margin-right: 20px;
+  margin-bottom: 0;
+}
+
+.signalR-container .MuiButton-containedPrimary {
+  width: 170px;
+}
+
+.signalR-container input {
+  color: #fff;
+}
+
+::placeholder{
+  color: #fff !important;
 }
