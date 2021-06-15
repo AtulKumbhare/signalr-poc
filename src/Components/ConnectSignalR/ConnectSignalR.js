@@ -31,7 +31,7 @@ const ConnectSignalR = () => {
   const handelConnect = () => {
     const connection = new HubConnectionBuilder()
       .configureLogging(LogLevel.Debug)
-      .withUrl(`http://biofenusersignalrapp.azurewebsites.net/api`, {
+      .withUrl(`https://biofenusersignalrapp.azurewebsites.net/api`, {
         headers: {
           "x-ms-signalr-userid": parseInt(personId),
           "x-functions-key": "Fendahl#123",
