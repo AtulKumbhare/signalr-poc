@@ -58,7 +58,7 @@ const ConnectSignalR = () => {
   const handelAddGroup = () => {
     axios
       .post(
-        `https://biofenusersignalrapp.azurewebsites.net/api/${groupName}/add/${personId}`
+        `https://biofenusersignalrapp.azurewebsites.net/api/${groupName}/add/${SignalRConnection.connection.connectionId}`
       )
       .then((res) => {
         if (res.status === 204) {
